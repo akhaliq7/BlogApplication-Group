@@ -1,0 +1,43 @@
+<html>
+<body>
+
+
+<div class="col-md-12" style="margin-bottom: 10px">
+    <div class="card" style="margin-bottom: 10px;">
+        <form method="POST" action="/Project/{{url}}">
+        <div class="card-body">
+            <div class="row">
+                 <div class="col-sm-10">
+                        <div class="form-group row">
+                         <label for="description" class="col-sm-4 col-form-label">Description of Milestone</label>
+                         <div class="col-sm-6">
+                             <input type="text" id="description" class="form-text text-muted" name="description_{{ms.id}}" aria-describedby="helpIdDescription" value="{{ms.description}}" maxlength="255" required>
+                         </div>
+                         <label for="intendedDueDate" class="col-sm-4 col-form-label">Intended Due Date</label>
+                         <div class="col-sm-8">
+                            <input type="date" id="intendedDueDate" name="intendedDueDate_{{ms.id}}" value="{{ms.intendedDueDate}}" required>
+                         </div>
+                         <label for="actualCompletionDate" class="col-sm-4 col-form-label">Actual Completion Date</label>
+                             <div class="col-sm-8">
+                                 <input type="date" id="actualCompletionDate" name="actualCompletionDate_{{ms.id}}" aria-describedby="helpIdIntDue" value="{{ms.actualCompletionDate}}">
+                             </div>
+                        </div>
+                </div>
+                <br>
+                <div class="col-sm-2" style="vertical-align: bottom;">
+
+                </div>
+            </div>
+        </div>
+            <div class="card-footer">
+                <form method="POST" action="/Project/{{url}}">
+                    <input type="submit" name="delete_{{ms.id}}" value="Delete" class="btn btn-primary">
+                </form>
+                    <input type="submit" name="saveChanges_{{ms.id}}" value="Modify" class="btn btn-primary">
+            </div>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>

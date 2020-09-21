@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+<body>
+
+    <div class="container-fluid">
+        <div class="row" style="margin-bottom: 10px">
+            <div class="col-md-12" style="margin-bottom: 10px">
+                <form method="POST" action="/Project/{{url}}">
+                <div class="card" style="margin-bottom: 10px;">
+                    <div class="card-body">
+                        <h4 class="card-title">Add Milestone</h4>
+                        <div class="form-group">
+                            <small id="helpIdDescription" class="form-text text-muted">Description of Milestone</small>
+                            <input type="text" id="description" name="description" aria-describedby="helpIdDescription" maxlength="255" required>
+
+                            <small id="helpIdIntDue" class="form-text text-muted">Intended Due Date</small>
+                            <input type="date" id="intendedDueDate" name="intendedDueDate" aria-describedby="helpIdIntDue" required>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <input type="submit" value="Add Milestone" name="addMilestone" class="btn btn-primary">
+                    </div>
+                </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

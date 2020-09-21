@@ -1,0 +1,49 @@
+body {
+    background-color: darkgrey;
+}
+
+.content {
+    background-color: steelblue;
+    position: absolute;
+    top: 150px;
+    left: 100px;
+    width: 950px;
+    height: 700px;
+}
+
+.banner {
+     display: block;
+     background-color: steelblue;
+     margin: 0px;
+     padding: 0px;
+    height: 60px;
+ }
+
+.Login {
+    position: absolute;
+    left: 1700px;
+    top: 12px;
+}
+
+.header {
+    position: absolute;
+    left: 800px;
+    top: 0px;
+}
+
+.registerForm {
+    position: absolute;
+    left: 1000px;
+    top: 0px;
+    background-color: steelblue;
+    height: 700px;
+    width: 700px;
+}
+
+.new-register {
+    left: 100px;
+}
+
+.new-login {
+    left: 100px;
+}

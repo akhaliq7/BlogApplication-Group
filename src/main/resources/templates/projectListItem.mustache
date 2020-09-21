@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+
+<div class="col-md-12" style="margin-bottom: 10px">
+    <div class="card" style="margin-bottom: 10px;">
+        <form method="POST" action="/Projects">
+        <div class="card-body">
+            <h4 class="card-title">{{title}}</h4>
+            <div class="row">
+                <div class="col-sm-8">
+                    <a href="/Project/{{URL}}/">localhost:9003/Project/{{URL}}</a>
+                </div>
+                <div class="col-sm-4">
+                </div>
+            </div>
+        </div>
+            <div class="card-footer">
+                <input type="submit" name="delete_{{id}}" value="Delete" class="btn btn-primary">
+            </div>
+        </form>
+    </div>
+</div>
+
+
+</body>
+</html>

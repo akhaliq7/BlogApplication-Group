@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">-->
+    <meta charset="utf-8"></meta>
+    <title>{{name}}'s Projects</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <ul class="navbar-nav">
+        <li class="nav-item active">
+            <a class="nav-link" href="/Projects">My Projects</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/Logout">Logout</a>
+        </li>
+    </ul>
+</nav>
+
+<div class="container-fluid">
+    <div class="row" style="margin-bottom: 10px">
+        <div class="col-md-12" style="margin-bottom: 10px">
+            <div class="card" style="margin-bottom: 10px;">
+                <form method="POST" action="/Projects">
+                <div class="card-body">
+                    <h4 class="card-title">Add Project</h4>
+                    <div class="form-group">
+                        <small id="helpIdTitle" class="form-text text-muted">Enter Project Title</small>
+                        <input type="text" id="title" name="title" class="form-control" aria-describedby="helpIdTitle" placeholder="Project Title" maxlength="255" required>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <input type="submit" value="Add Project" name="addProject" class="btn btn-primary">
+                </div>
+            </form>
+            </div>
+        </div>
+    </div>
+</div>
+<h5>{{name}}’s Projects</h5
+</body>
+</html>

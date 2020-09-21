@@ -1,0 +1,108 @@
+<html>
+
+<head>
+    <title> Project Planner </title>
+    <!--<link href="styles/WPD.css" rel="stylesheet" type="text/css">-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<!-- NO LONGER BEING USED - USE registerPage.mustache in the templates folder.
+This page now just redirects the user to login page-->
+<script>
+    window.location.replace("http://localhost:9003/Login");
+</script>
+<body>
+<div class="container-fluid">
+    <div class="row" style="margin-bottom: 10px;">
+        <div class="col-md-12" style="margin-bottom: 10px;">
+            <h3>Project Planner - Group AE</h3>
+        </div>
+    </div>
+</div>
+
+<div>
+    <div class="container-fluid">
+        <div class="row" style="margin-bottom: 10px;">
+            <!-- site info -->
+            <div class="col-md-12" style="margin-bottom: 10px;">
+                <div class="card" style="margin-bottom: 10px">
+                    <div class="card-body">
+                        <h4 class="card-title">Welcome</h4>
+                        <p>Plan any project, one milestone at a time.</p>
+                        <p>With this site, your details and your project will be kept secure. If you need to
+                            share the project with anyone, you will be able to do so.</p>
+                        <p>Each project will contain a list of milestones that you are planning to carry out for any
+                            project, for example a coursework project. As a user, you will be able to define your own
+                            milestones by giving them a description, an expected due date. Once the milestone is complete,
+                            users will be able to enter the actual completion date of the milestone.</p>
+                        <p>You will also be able to use this planner to view any incomplete milestones, edit milestones and
+                            remove them from a project</p>
+                    </div>
+                </div>
+            </div>
+            <!-- end of site info -->
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row" style="margin-bottom: 10px">
+            <!-- Register form -->
+            <div class="col-md-6" style="margin-bottom: 10px">
+                <div class="card" style="margin-bottom: 10px;">
+                    <div class="card-body">
+                        <h4 class="card-title">Register For An Account</h4>
+                        <div class="form-group">
+                            <small id="helpIdFullName" class="form-text text-muted">Enter full name</small>
+                            <input type="text" class="form-control" aria-describedby="helpIdFullName"
+                                   placeholder="Full Name">
+                            <small id="helpIdEmail" class="form-text text-muted">Enter email address</small>
+                            <input type="email" class="form-control" aria-describedby="helpIdUName"
+                                   placeholder="Email">
+                            <small id="helpIdNewPass" class="form-text text-muted">Create a password</small>
+                            <input type="password" id="newPassword" class="form-control" aria-describedby="helpIdNewPass"
+                                   placeholder="New Password">
+
+                            <small id="helpIdConPass" class="form-text text-muted">Confirm password</small>
+                            <input type="password" class="form-control" aria-describedby="helpIdConPass"
+                                   placeholder="Confirm Password" data-match="newPassword"
+                                   data-match-error="Password does not match">
+                        </div>
+                    </div>
+                    <!-- change so button calls appropriate function -->
+                    <div class="card-footer">
+                        <button type="submit" class="btn btn-primary"
+                                >
+                            Create Account</button>
+                    </div>
+                </div>
+            </div>
+            <!-- End of register form -->
+            <!-- Login Form -->
+            <div class="col-md-6" style="margin-bottom: 10px">
+                <div class="card" style="margin-bottom: 10px;">
+                    <div class="card-body">
+                        <h4 class="card-title">Login</h4>
+                        <div class="form-group">
+                            <small id="helpIdUName" class="form-text text-muted">Enter username</small>
+                            <input type="email" class="form-control" aria-describedby="helpIdUName"
+                                   placeholder="Email">
+
+                            <small id="helpIdPassword" class="form-text text-muted">Enter password</small>
+                            <input type="password" class="form-control" aria-describedby="helpIdPassword"
+                                   placeholder="Password">
+                        </div>
+                    </div>
+                    <!-- change so button calls appropriate function -->
+                    <div class="card-footer">
+                        <button type="submit" class="btn btn-primary"
+                                @click="login_click">
+                            Login</button>
+                    </div>
+                </div>
+            </div>
+            <!-- End of login form -->
+        </div>
+    </div>
+</div>
+</body>
+
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Shop Demo">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+
+<!------------------>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link" href="/Login">Login</a>
+        </li>
+        <li class="nav-item active">
+            <a class="nav-link" href="/Register">Register</a>
+        </li>
+    </ul>
+</nav>
+<div>
+    <div class="container-fluid">
+        <div class="row" style="margin-bottom: 10px;">
+            <!-- site info -->
+            <div class="col-md-6" style="margin-bottom: 10px;">
+                <div class="card" style="margin-bottom: 10px">
+                    <div class="card-body">
+                        <h4 class="card-title">Welcome</h4>
+                        <p>Plan any project, one milestone at a time.</p>
+                        <p>With this site, your details and your project will be kept secure. If you need to
+                            share the project with anyone, you will be able to do so.</p>
+                        <p>Each project will contain a list of milestones that you are planning to carry out for any
+                            project, for example a coursework project. As a user, you will be able to define your own
+                            milestones by giving them a description, an expected due date. Once the milestone is complete,
+                            users will be able to enter the actual completion date of the milestone.</p>
+                        <p>You will also be able to use this planner to view any incomplete milestones, edit milestones and
+                            remove them from a project</p>
+                    </div>
+                </div>
+            </div>
+            <!-- end of site info -->
+
+            <!-- Register form -->
+            <div class="col-md-6" style="margin-bottom: 10px">
+                <form method="POST" action="Register">
+                <div class="card" style="margin-bottom: 10px;">
+
+                    <div class="card-body">
+                        <h4 class="card-title">Register For An Account</h4>
+                        <div class="form-group">
+                            <small id="helpIdEmail" class="form-text text-muted">Enter email address</small>
+                            <input type="text" id="email" name="email" class="form-control"
+                                   aria-describedby="helpIdEmail" placeholder="Email">
+                            <small id="helpIdName" class="form-text text-muted">Enter full name</small>
+                            <input type="text" id="name" name="name" class="form-control"
+                                   aria-describedby="helpIdName" placeholder="Full Name">
+                            <small id="helpIdNewPass" class="form-text text-muted">Create a password</small>
+                            <input type="password" id="password" name="password" class="form-control"
+                                   aria-describedby="helpIdNewPass" placeholder="Password">
+
+                            <a href="/Login">Got an account? Login</a>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <input type="submit" class="btn btn-primary" value="Register">
+                    </div>
+                </div>
+                </form>
+                </div>
+
+            <!-- End of register form -->
+
+        </div>
+    </div>
+</div>
+</body>
+</html>
